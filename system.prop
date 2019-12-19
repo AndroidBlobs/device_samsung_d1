@@ -1,0 +1,27 @@
+#
+# from device/samsung/d1/system.prop
+#
+#
+# system.prop for universal9820
+#
+ro.arch=exynos9825
+ro.kernel.qemu=0
+ro.kernel.qemu.gles=2
+persist.demo.hdmirotationlock=false
+#Enable S.LSI USB settings
+dev.usbsetting.embedded=on
+#RILD debug level setting
+ro.debug_level=0x494d
+#Cmc properties
+ro.cmc.device_type=pd
+ro.cmc.version=2.0
+#Enable csc for vendor image
+ro.vendor.cscsupported=1
+# SVC Acquisition time
+sys.config.phone_start_early=true
+persist.radio.multisim.config=dsds
+import /mnt/vendor/efs/factory.prop
+ro.multisim.simslotcount=2
+ro.vendor.multisim.simslotcount=2
+
+#
